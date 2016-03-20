@@ -1,0 +1,35 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow($h-shadow, $v-shadow, $blur, $color) {
+  -webkit-box-shadow: $h-shadow $v-shadow $blur $color;
+     -moz-box-shadow: $h-shadow $v-shadow $blur $color;
+          box-shadow: $h-shadow $v-shadow $blur $color;
+}
+@mixin linear-gradient($direction, $color-stop1, $color-stop2) {
+  background: -webkit-linear-gradient($direction, $color-stop1, $color-stop2);
+     background: -moz-linear-gradient($direction, $color-stop1, $color-stop2);
+	   background: -o-linear-gradient($direction, $color-stop1, $color-stop2);
+          background: linear-gradient($direction, $color-stop1, $color-stop2);
+}
+@mixin animation($frame, $time) {
+  -webkit-animation:$frame $time;
+		  animation:$frame $time;
+}
+@mixin keyframe($name, $atr, $state1, $state2) {
+	@keyframe $name{
+		from {$atr : $state1;}
+		to {$atr : $state2;}
+	}
+	@-webkit-keyframes $name{
+		from {$atr : $state1;}
+		to {$atr : $state2;}
+	}
+}
+@mixin transition($atr, $time) {
+  -webkit-transition:$atr $time;
+		  transition:$atr $time;
+}
