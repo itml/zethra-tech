@@ -15,7 +15,7 @@ function createList() {
 }
 function getFiles() {
 	$.ajax({
-	  url: "/php/getFiles.php?folder=" + folder,
+	  url: "php/getFiles.php?folder=" + folder
 	}).done(function( data ) {
 		if ( console && console.log ) {
 		  console.log(data);
@@ -27,12 +27,3 @@ function getFiles() {
 		for (var i=0; i < count; i++){console.log(files[i]);}
 	});
 }
-/*
-$('ul').click(function(e) {
-    var i = $(e.target).index();  
-	console.log(files[i]);
-	e.preventDefault();
-	//window.location.href = files[i];
-	window.open(files[i], '_self');
-});
-*/
