@@ -90,9 +90,9 @@ function pp(){
 function dl(){
 	
 }
-$('#player').bind("ended", function(){foward(true);});
-$('#player').on('pause', function(){playState = false;});
-$('#player').on('play', function(){playState = true;});
+audio.bind("ended", function(){foward(true);});
+audio.on('pause', function(){playState = false;});
+audio.on('play', function(){playState = true;});
 $(document).keydown(function(e){
 	switch(e.which){
 		case 32: pp(); break;

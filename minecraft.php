@@ -28,7 +28,7 @@ $Timer = Number_Format(MicroTime(true) - $Timer, 4, '.', '');
 <html>
 <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
     <title>Zethra Tech</title>
 </head>
 
