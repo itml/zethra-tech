@@ -38,8 +38,10 @@ $Timer = Number_Format(MicroTime(true) - $Timer, 4, '.', '');
     <div style="text-align: center;">
         <h2>Zethra's Minecraft Server</h2>
 
-        <h2> IP is: 162.243.4.46</h2>
+        <h2>IP is: 162.243.4.46</h2>
 
+	<h2><a href="http://map.zethratech.com" target="_blank">Server Map</a></h2>
+	
         <?php
         $Info = $Query->GetInfo();
         if (isset($Exception)) {
