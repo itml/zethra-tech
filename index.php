@@ -24,12 +24,28 @@ try {
 
 $Timer = Number_Format(MicroTime(true) - $Timer, 4, '.', '');
 ?>
+<?php
+header("X-Frame-Options: DENY");
+header("Content-Security-Policy: frame-ancestors 'none'", false);
+?>
 <!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <title>Zethra Tech</title>
+    <style>
+        html {
+            display: none;
+        }
+    </style>
+    <noscript>
+        <style>
+            html {
+                display: block;
+            }
+        </style>
+    </noscript>
 </head>
 
 <body background="assets/noisy-texture.png">
@@ -66,6 +82,12 @@ $Timer = Number_Format(MicroTime(true) - $Timer, 4, '.', '');
         <p>If the server is down unexpectedly please contact me</p>
     </div>
 </div>
-
+<script>
+    if (self == top) {
+        document.documentElement.style.display = 'block';
+    } else {
+        top.location = self.location;
+    }
+</script>
 </body>
 </html>
