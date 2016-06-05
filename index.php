@@ -32,7 +32,7 @@ $Timer = Number_Format(MicroTime(true) - $Timer, 4, '.', '');
     <title>Zethra Tech</title>
 </head>
 
-<body>
+<body background="assets/noisy-texture.png">
 <?php //include 'header.html' ?>
 <div id="header"></div>
 <div id="content">
