@@ -34,7 +34,6 @@ $Timer = Number_Format(MicroTime(true) - $Timer, 4, '.', '');
 
 <body background="assets/noisy-texture.png">
 <?php //include 'header.html' ?>
-<div id="header"></div>
 <div id="content">
     <div style="text-align: center;">
         <h2>Zethra's Minecraft Server</h2>
